@@ -1,0 +1,84 @@
+$default-font: "montserrat", sans-serif;
+$accent: #00a2fe;
+$text: #424242;
+
+
+@mixin bgGradient {
+	background: #142D51;
+	background: -webkit-linear-gradient(left, #142D51, #0175A8);
+	background: -moz-linear-gradient(left, #142D51, #0175A8);
+	background: linear-gradient(to right, #142D51, #0175A8);
+}
+
+@mixin lightGradient {
+	background: #5C84DD;
+	background: -webkit-linear-gradient(left, #5C84DD, #45B2FE);
+	background: -moz-linear-gradient(left, #5C84DD, #45B2FE);
+	background: linear-gradient(to right, #5C84DD, #45B2FE);
+}
+
+
+@mixin bgSettings{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin askewLineLeftTopBefore{
+	position: absolute;
+	left: 0;
+	top: -96px;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: 96px solid #fff;
+	border-left: 100vw solid transparent;
+}
+
+@mixin askewLineLeftTopAfter{
+	position: absolute;
+  left: 0;
+  bottom: -96px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 96px solid transparent;
+  border-left: 100vw solid #fff;
+}
+
+
+
+@mixin askewLinRightTopBefore{
+	position: absolute;
+	left: 0;
+	top: -96px;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: 96px solid #fff;
+	border-right: 100vw solid transparent;
+}
+
+@mixin askewLineRightTopAfter{
+	position: absolute;
+  left: 0;
+  bottom: -96px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 96px solid transparent;
+  border-right: 100vw solid #fff;
+}
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
