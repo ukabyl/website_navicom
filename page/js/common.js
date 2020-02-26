@@ -2,19 +2,19 @@ $(function() {
 
   $('form').submit(function (e) { //устанавливаем событие отправки для формы с id=form
     e.preventDefault();
-    var $data = '';
-    $( this ).find ('input').each(function() {
-        // добавим новое свойство к объекту $data
-        // имя свойства – значение атрибута name элемента
-        // значение свойства – значение свойство value элемента
-        if ( (this.type === 'radio' && this.checked ) || (this.type === 'checkbox' && this.checked) ) {
-            $data += '<tr><td>' + this.name + '</td><td>'  + this.value + '</td></tr>';
-        } else if ( this.type !== 'radio' && this.type !== 'checkbox' ) {
-            if ( this.name !== 'name' && this.name !== 'phone' && this.name !== 'message' && this.name !== 'email' && this.name !== 'site' && this.name !== 'source' ) {
-                $data += '<tr><td>' + this.name + '</td><td>'  + this.value + '</td></tr>';
-            }
-        }
-    });
+    var $data = $( this ).serialize();
+    // $( this ).find ('input').each(function() {
+    //     // добавим новое свойство к объекту $data
+    //     // имя свойства – значение атрибута name элемента
+    //     // значение свойства – значение свойство value элемента
+    //     if ( (this.type === 'radio' && this.checked ) || (this.type === 'checkbox' && this.checked) ) {
+    //         $data += '<tr><td>' + this.name + '</td><td>'  + this.value + '</td></tr>';
+    //     } else if ( this.type !== 'radio' && this.type !== 'checkbox' ) {
+    //         $data += '<tr><td>' + this.name + '</td><td>'  + this.value + '</td></tr>';
+    //     }
+    // });
+
+    console.log($data);
     
     $.ajax({
         type: "POST", //Метод отправки
