@@ -1,8 +1,8 @@
 <?php
 
-$site = "Garant Tour";
-$senderMail = "navicom.noreply@gmail.com";   
-$senderMailPass = "123456navicom";
+$site = "NAVICOM";
+$senderMail = "navicom@xsoft.kz";   
+$senderMailPass = "IxjOfdBi8IKKPTEAGjTx";
 $adminMail = "umkabylbekov@gmail.com";
 
 if((isset($_POST['name'])&&$_POST['name']!="") && (isset($_POST['phone'])&&$_POST['phone']!=""))
@@ -21,8 +21,10 @@ if((isset($_POST['name'])&&$_POST['name']!="") && (isset($_POST['phone'])&&$_POS
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = "ssl";
 
-    $mail->Host = "smtp.gmail.com";
+    $mail->Host = "smtp.yandex.ru";
     $mail->Port = "465"; // порт SMTP
+
+
 
     $mail->Username = $senderMail;
     $mail->Password = $senderMailPass;
