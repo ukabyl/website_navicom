@@ -1,6 +1,6 @@
 $(function() {
 
-  $('.sendForm').submit(function (e) { //устанавливаем событие отправки для формы с id=form
+  $('form').submit(function (e) { //устанавливаем событие отправки для формы с id=form
     e.preventDefault();
     var $data = '';
     $( this ).find ('input').each(function() {
