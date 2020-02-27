@@ -17,7 +17,7 @@ $(function() {
     
     $.ajax({
         type: "POST", //Метод отправки
-        url: "https://api.qub.kz/feedback/feedback/create", //путь до php фаила отправителя
+        url: "feedback.php", //путь до php фаила отправителя
         data: $data,
         success: function () {
           $.fancybox.close();
