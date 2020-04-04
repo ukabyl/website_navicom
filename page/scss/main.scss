@@ -124,7 +124,7 @@ ul{
 }
 
 .header{
-	padding: 1rem 0;
+	padding: .5rem 0;
 	position: sticky;
 	@include bgGradient;
 	top: 0;
@@ -147,12 +147,45 @@ ul{
 	}
 }
 
+.ds-menu-sub-menu{
+  position: absolute;
+  @include bgGradient;
+  top: 32px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  left: -67px;
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s ease;
+  &.active{
+  	z-index: 2;
+  	visibility: visible;
+  	opacity: 1;
+  }
+
+  a{
+  	margin-bottom: .5rem;
+  	&:last-child{
+  		margin-bottom: 0;
+  	}
+  }
+}
+
 .ds-menu{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	&__item{
-		margin-right: 10px;
+		margin-right: 10px;	
+		position: relative;
 		
 		&:last-child{
 			margin-right: 0;
@@ -233,14 +266,14 @@ ul{
 
 
 .mission{
-	margin: 96px 0;
 	position: relative;
-	&:after{
-		@include askewLineLeftTopAfter;
-	}
-	&:before{
-		@include askewLineLeftTopBefore;
-	}
+	padding: 16rem 0 3rem;
+	// &:after{
+	// 	@include askewLineLeftTopAfter;
+	// }
+	// &:before{
+	// 	@include askewLineLeftTopBefore;
+	// }
 	&__person{
 		height: 300px;
 		width: auto;
@@ -270,6 +303,8 @@ ul{
 
 .history{
 	padding: 3rem 0 6rem;
+	position: relative;
+	z-index: 2;
 	&__events{
 		display: flex;
 		justify-content: space-between;
@@ -343,17 +378,15 @@ ul{
 
 
 .typeOfAreas{
-	padding: 16rem 0 3rem;
 	&__inner{
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		margin-right: auto;
-    max-width: 940px;
     margin-left: auto;
 	}
 	&__item{
-		width: 39%;
+		width: 50%;
 		display: flex;
 		align-items:center;
 		margin-bottom: 2rem;
@@ -361,15 +394,34 @@ ul{
 		&-icon{
 			width: 15%;
 			height: auto;
+		}
+		&-text{
+			width: 80%;
 		}	
 		&-title{
-			width: 80%;
+			font-weight: 600!important	;
 			font-size: 1.5rem;
+			line-height: 1;
 			font-weight: 200;
+		}
+		p{
+			font-size: .8rem;
+			font-weight: 500;
+			margin-top: 1rem;
+		}
+		a{
+			display: block;
+			margin-top: 1rem;
+			font-size: .9rem;
+			color: #000;
+			font-weight: 400;
+			&:hover{
+				color: $accent;
+			}
 		}
 		&:nth-child(even){
 	   margin-left: auto;
- 		 width: 35%;
+ 		 width: 45%;
 		}
 	}
 }

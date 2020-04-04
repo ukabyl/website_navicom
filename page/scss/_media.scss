@@ -103,7 +103,7 @@
 
 	.mission{
 		text-align: center;
-		margin: 16px 0;
+		padding: 3rem 0;
 		&:before{
 			border-bottom-width: 16px;
 			top: -15px;
@@ -214,17 +214,20 @@
 		padding: 3rem 0;
 		&__inner{
 			flex-direction: column;
-			max-width: 245px;
 			margin: 0 auto;
 		}
 		&__item{
 			width: 100%;
-			justify-content: space-between;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
 			&:nth-child(even){
 				width: 100%;
 				margin-left: unset;
 			}
 			&-icon{
+				margin-bottom: .5rem;
 				img{
 					max-width: 40px;
 				}

@@ -56,13 +56,15 @@
 							<a href="#typesOfArea" class="anchor ds-menu__link custom-link">Виды деятельности</a>
 						</li>
 						<li class="ds-menu__item">
-							<a href="#advantages" class="anchor ds-menu__link custom-link">Преимущества</a>
+							<span class="hover-effect ds-menu__link custom-link">Охрана имущества</span>
+							<div class="ds-menu-sub-menu">
+								<a href="#option" class="anchor ds-menu__link custom-link">Охрана квартиры</a>
+								<a href="#option" class="anchor ds-menu__link custom-link">Охрана дома</a>
+								<a href="#option" class="anchor ds-menu__link custom-link">Охрана коммерческих объектов</a>
+							</div>
 						</li>
 						<li class="ds-menu__item">
-							<a href="#option" class="anchor ds-menu__link custom-link">Основные опции</a>
-						</li>
-						<li class="ds-menu__item">
-							<a href="#process" class="anchor ds-menu__link custom-link">Как мы работаем</a>
+							<a href="#discount" class="anchor ds-menu__link custom-link">Акции</a>
 						</li>
 						<li class="ds-menu__item">
 							<a href="#contact" class="anchor ds-menu__link custom-link">Контакты</a>
@@ -81,7 +83,7 @@
 	<main class="section main text-white">
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-6 col-12 order-1 order-lg-0">
+				<div class="col-lg-6 col-12">
 					<div class="main__left">
 						<h1 class="main__title">Оптимальные решения<br> Вашей безопасноти</h1>
 						<p class="main__text">
@@ -90,38 +92,17 @@
 							Обеспечьте безопастность своего имещества и поставьте свою
 							недвижимость под охрану в Navicom Security
 						</p>
-						<button data-fancybox data-src="#form-modal" href="javascript:;" class="main__button button">Оставить заявку</button>
+						<button title="Успейте подключиться, сейчас действует акция на бесплатную установку оборудования" data-fancybox data-src="#form-modal" href="javascript:;" class="main__button button">Оставить заявку</button>
 					</div>
 				</div>
-				<div class="col-lg-5 col-12 order-0 order-lg-1">
+				<div class="col-lg-5 col-12">
 					<div class="main__right">
-						<img src="img/main-img-min.png" class="img-fluid">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/cl3ggx6Hfa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>	
 				</div>
 			</div>
 		</div>
 	</main>
-
-	<section class="mission bg-white section" id="mission">
-		<div class="container">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-lg-5 col-12">
-					<div class="mission__imgs">
-						<img class="img-fluid mission__person" src="img/person-withcomp-min.png">
-						<img class="img-fluid mission__video-watching" src="img/video-watching2-min.png">
-					</div>
-				</div>
-				<div class="col-lg-5 col-12">
-					<h2 class="mission__title">Наша миссия</h2>
-					<b class="mission__text-title">Сделать жизнь и бизнес<br> 
-					Казахстанцев комфортнее и безопаснее
-					</b>
-					<p class="mission__text">Предоставляя для этого самые современные 
-					и качественные технические решения.</p>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="history section text-white" id="history">
 		<div class="container">
@@ -189,6 +170,27 @@
 		</div>
 	</section>
 
+	<section class="mission bg-white section" id="mission">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-5 col-12 order-lg-0 order-1">
+					<div class="mission__imgs">
+						<img class="img-fluid mission__person" src="img/person-withcomp-min.png">
+						<img class="img-fluid mission__video-watching" src="img/video-watching2-min.png">
+					</div>
+				</div>
+				<div class="col-lg-5 col-12 order-lg-1 order-0">
+					<h2 class="mission__title">Наша миссия</h2>
+					<b class="mission__text-title">Сделать жизнь и бизнес<br> 
+					Казахстанцев комфортнее и безопаснее
+					</b>
+					<p class="mission__text">Предоставляя для этого самые современные 
+					и качественные технические решения.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="typeOfAreas bg-white section" id="typesOfArea">
 		<div class="container">
 			<h2 class="section__title">Виды детяельности</h2>
@@ -197,48 +199,59 @@
 					<div class="typeOfAreas__item-icon">
 						<img class="img-fluid" src="img/house-min.png">
 					</div>
-					<div class="typeOfAreas__item-title">
-						Автоматизация зданий
+					<div class="typeOfAreas__item-text">
+						<b class="typeOfAreas__item-title">Автоматизация зданий</b>
+						<p>
+							Одно из важнейших направлений в области строительства
+							и управления инженерными системами. Применение системы автоматизации 
+							зданий позволяет повысить эффективности работы осветительного и обогревательного 
+							оборудования, вентиляции и кондиционирования, водоснабжения.
+						</p>
 					</div>
 				</div>
 				<div class="typeOfAreas__item">
 					<div class="typeOfAreas__item-icon">
 						<img class="img-fluid" src="img/security-min.png">
 					</div>
-					<div class="typeOfAreas__item-title">
-						Физическая охрана объектов
+					<div class="typeOfAreas__item-text">
+						<b class="typeOfAreas__item-title">Физическая охрана объектов</b>
+						<a data-fancybox data-src="#form-modal" href="javascript:;">Подробнее 	&rarr;</a>
 					</div>
 				</div>
 				<div class="typeOfAreas__item">
 					<div class="typeOfAreas__item-icon">
 						<img class="img-fluid" src="img/console-min.png">
 					</div>
-					<div class="typeOfAreas__item-title">
-						Центр мониторинга
+					<div class="typeOfAreas__item-text">
+						<b class="typeOfAreas__item-title">Центр мониторинга</b>
+						<a href="#option" class="anchor">Подробнее 	&rarr;</a>
 					</div>
 				</div>
 				<div class="typeOfAreas__item">
 					<div class="typeOfAreas__item-icon">
 						<img class="img-fluid" src="img/cotrol-system-min.png">
 					</div>
-					<div class="typeOfAreas__item-title">
-						Системы контроля и управление доступом
+					<div class="typeOfAreas__item-text">
+						<b class="typeOfAreas__item-title">Системы контроля и управление доступом</b>
+						<a data-fancybox data-src="#form-modal" href="javascript:;">Подробнее 	&rarr;</a>
 					</div>
 				</div>
 				<div class="typeOfAreas__item">
 					<div class="typeOfAreas__item-icon">
 						<img class="img-fluid" src="img/fire-min.png">
 					</div>
-					<div class="typeOfAreas__item-title">
-						Проектирование и монтаж систем безопасности
+					<div class="typeOfAreas__item-text">
+						<b class="typeOfAreas__item-title">Проектирование и монтаж систем безопасности</b>
+						<a data-fancybox data-src="#form-modal" href="javascript:;">Подробнее 	&rarr;</a>
 					</div>
 				</div>
 				<div class="typeOfAreas__item">
 					<div class="typeOfAreas__item-icon">
 						<img class="img-fluid" src="img/system-watching-min.png">
 					</div>
-					<div class="typeOfAreas__item-title">
-						Системы безопасности и видеонаблюдения
+					<div class="typeOfAreas__item-text">
+						<b class="typeOfAreas__item-title">Системы безопасности и видеонаблюдения</b>
+						<a data-fancybox data-src="#form-modal" href="javascript:;">Подробнее 	&rarr;</a>
 					</div>
 				</div>
 			</div>
@@ -578,8 +591,9 @@
 
 	<section class="option bg-white section" id="option">
 		<div class="container">
+			<h2 class="section__title">Охрана имущества</h2>
 			<div class="option__wrapper">
-				<div class="option__item">
+				<div id="option1" class="option__item">
 					<div class="option__img">
 						<img src="img/1-min.png" class="img-fluid">
 					</div>
@@ -620,7 +634,7 @@
 						<button data-fancybox data-src="#form-modal" href="javascript:;" class="button">Оставить заявку</button>
 					</div>
 				</div>
-				<div class="option__item">
+				<div id="option2" class="option__item">
 					<div class="option__img">
 						<img src="img/2-min.png" class="img-fluid">
 					</div>
@@ -661,7 +675,7 @@
 						<button data-fancybox data-src="#form-modal" href="javascript:;" class="button">Оставить заявку</button>
 					</div>
 				</div>
-				<div class="option__item">
+				<div id="option3" class="option__item">
 					<div class="option__img">
 						<img src="img/3-min.png" class="img-fluid">
 					</div>
@@ -823,7 +837,7 @@
 		</div>
 	</section>
 
-	<section class="stock bg-white section">
+	<section id="discount" class="stock bg-white section">
 		<div class="container">
 			<h2 class="section__title text-accent">
 				Акции
@@ -865,8 +879,10 @@
 					</div>
 					<div class="stock__item-bottom">
 						<div class="stock__item-title">
+							<div>6 + 1</div>
 							При оплате за 6 месяцев <br> вы получаете месяц в подарок
 							<span class="stock__item-text">
+								<div>12 + 2</div>
 								При оплате за год вы получаете 2 месяца
 								в подарок
 							</span>
@@ -966,15 +982,26 @@
 			<li class="mb-menu__item">
 				<a href="#typesOfArea" class="close-sidebar anchor mb-menu__link custom-link">Виды деятельности</a>
 			</li>
-			<li class="mb-menu__item">
-				<a href="#advantages" class="close-sidebar anchor mb-menu__link custom-link">Преимущества</a>
+
+<li class="mb-menu__item">
+				<a href="#option1" class="close-sidebar anchor mb-menu__link custom-link">Охрана квартиры</a>
 			</li>
+
 			<li class="mb-menu__item">
-				<a href="#option" class="close-sidebar anchor mb-menu__link custom-link">Основные опции</a>
+				<a href="#option2" class="close-sidebar anchor mb-menu__link custom-link">Охрана дома</a>
 			</li>
+
 			<li class="mb-menu__item">
-				<a href="#process" class="close-sidebar anchor mb-menu__link custom-link">Как мы работаем</a>
+				<a href="#option3" class="close-sidebar anchor mb-menu__link custom-link">Охрана коммерческих объектов</a>
 			</li>
+
+			<li class="mb-menu__item">
+				<a href="#discount" class="close-sidebar anchor mb-menu__link custom-link">Акции</a>
+			</li>
+
+			
+			
+			
 			<li class="mb-menu__item">
 				<a href="#contact" class="close-sidebar anchor mb-menu__link custom-link">Контакты</a>
 			</li>

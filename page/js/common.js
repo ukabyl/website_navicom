@@ -14,6 +14,14 @@ $(function() {
     //     }
     // });
 
+   
+    console.log('asdasd')
+    $( ".ds-menu__item" ).hover(function(){ // задаем функцию при наведении курсора на элемент 
+      $('.ds-menu-sub-menu').addClass('active');
+    }, function() {
+      console.log('asdasd');
+    });
+
     
     $.ajax({
         type: "POST", //Метод отправки

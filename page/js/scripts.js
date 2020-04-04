@@ -13,11 +13,10 @@ $(function() {
     //         $data += '<tr><td>' + this.name + '</td><td>'  + this.value + '</td></tr>';
     //     }
     // });
-
     
     $.ajax({
         type: "POST", //Метод отправки
-        url: "feedback.php", //путь до php фаила отправителя
+        url: "https://api.qub.kz/feedback/feedback/create", //путь до php фаила отправителя
         data: $data,
         success: function () {
           $.fancybox.close();
@@ -36,6 +35,12 @@ $(function() {
     });
     return false;
 });
+
+  $( ".ds-menu__item" ).hover(function(){ // задаем функцию при наведении курсора на элемент 
+    $('.ds-menu-sub-menu').addClass('active');
+  }, function() {
+    $('.ds-menu-sub-menu').removeClass('active');
+  });
 
 	// *********************************** Sidebar
   $( "#sidebar" ).simplerSidebar( {
